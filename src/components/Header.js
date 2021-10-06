@@ -23,7 +23,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0px 2px 5px 3px black;
+  box-shadow: 0px 2px 10px -2px #000;
 
   .title {
     color: white;
