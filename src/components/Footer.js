@@ -78,4 +78,14 @@ const Container = styled.div`
     font-size: 17px;
     color: #fff;
   }
+
+  @media (max-width: 640px) {
+    .footer-infos {
+      flex-direction: column;
+
+      .logo-ccmn {
+        margin: 25px 0px 20px 30px;
+      }
+    }
+  }
 `;

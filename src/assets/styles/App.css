@@ -1,3 +1,21 @@
+.App {
+  max-width: 1210px;
+
+  background-color: #fff;
+
+  margin: 0 auto;
+}
+
+@media (min-width: 1209px) {
+  body {
+    padding: 20px 0px;
+  }
+
+  .App {
+    box-shadow: 0px 0px 10px 3px rgb(99, 99, 99);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

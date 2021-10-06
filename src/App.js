@@ -1,4 +1,5 @@
 import "./assets/styles/App.css";
+import "./assets/styles/reset.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
