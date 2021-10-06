@@ -35,6 +35,8 @@ const Container = styled.div`
   .sub-title {
     width: 226px;
     color: white;
+
     font-size: 17px;
+    text-align: center;
   }
 `;
