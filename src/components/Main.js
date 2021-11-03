@@ -22,7 +22,7 @@ export default function Main() {
           Nosso Canal
           <LogoYoutube color={"#000000"} height="70px" width="70px" />
         </a>
-        <a href="#" target="_blank">
+        <a href="/text" target="_blank">
           Exemplo
           <Newspaper color={"#000000"} height="70px" width="70px" />
         </a>
