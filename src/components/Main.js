@@ -11,32 +11,86 @@ export default function Main() {
       </div>
       <span>Links Úteis:</span>
       <div className="grid-links">
+        <a href="http://www.speedyshare.com/drive/s/GE5dIu8EwESJEkySydikUPmB4JODOo" target="_blank">
+          Apresentação
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
         <a
           href="https://siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/1CCECD3F-92A4-F79D-6769-A55A93A1EB26.html"
           target="_blank"
         >
-          Grade curricular
+          Grade curricular BCMT
           <Reader color={"#000000"} height="70px" width="70px" />
         </a>
+
+        <a href="#" target="_blank">
+          Regulamento falta
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="#" target="_blank">
+          Objetivos falta
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="#" target="_blank">
+          Disciplinas e Exigências falta
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="#" target="_blank">
+          Coordenação falta
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="http://www.speedyshare.com/drive/s/KoTP3XN5clxfDmWmLr4905LmF93aGm" target="_blank">
+          Analista de Sup. à Decisão
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a
+          href="https://siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/91D11513-92A4-F799-1817-75D69383A7B9.html"
+          target="_blank"
+        >
+          Distribuição curricular: Análise
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="http://www.speedyshare.com/drive/s/RKygH17IoLiwJnfPJluLxpfVUwzeeh" target="_blank">
+          Sensoriamento remoto e Geoprocessamento
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a
+          href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/8C768E10-92A4-F79B-6A3A-191E92752891.html"
+          target="_blank"
+        >
+          Distribuição curricular: Sensoriamento
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="http://www.speedyshare.com/drive/s/q0YlyDxYyMTetaJCFEUzgEw6aQluk0" target="_blank">
+          Ciências da Terra e Patrimônio Natural
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a
+          href="https://siga.ufrj.br/sira/repositorio-curriculo/F04BDFF5-92A4-F79A-5A68-EF48B3805A33.html"
+          target="_blank"
+        >
+          Distribuição curricular: Patrimônio
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
+        <a href="#" target="_blank">
+          Contatos falta
+          <Newspaper color={"#000000"} height="70px" width="70px" />
+        </a>
+
         <a href="https://www.youtube.com/channel/UCuF83xF3xC2mwcW6aGU9KfQ" target="_blank">
           Nosso Canal
           <LogoYoutube color={"#000000"} height="70px" width="70px" />
-        </a>
-        <a href="#" target="_blank">
-          Exemplo
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-        <a href="#" target="_blank">
-          Exemplo
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-        <a href="#" target="_blank">
-          Exemplo
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-        <a href="#" target="_blank">
-          Exemplo
-          <Newspaper color={"#000000"} height="70px" width="70px" />
         </a>
       </div>
     </Container>
@@ -90,6 +144,7 @@ const Container = styled.div`
       width: 200px;
 
       border-radius: 10px;
+      box-shadow: 0px 0px 3px #f1faee;
 
       background-color: #f1faee;
 
@@ -103,6 +158,7 @@ const Container = styled.div`
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      text-align: center;
     }
   }
 
