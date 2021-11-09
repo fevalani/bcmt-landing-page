@@ -144,9 +144,9 @@ const Container = styled.div`
       width: 200px;
 
       border-radius: 10px;
-      box-shadow: 0px 0px 3px #f1faee;
+      box-shadow: 0px 0px 3px #c9cfc7;
 
-      background-color: #f1faee;
+      background-color: #dce3e9;
 
       font-size: 25px;
       font-weight: bold;
