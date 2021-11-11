@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import Loader from "react-loader-spinner";
-import { LogoYoutube, Reader, Newspaper } from "react-ionicons";
+import {
+  LogoYoutube,
+  Reader,
+  Mail,
+  Easel,
+  Book,
+  TrendingUp,
+  ListCircle,
+  Business,
+  Library,
+} from "react-ionicons";
 
 export default function Main() {
   return (
@@ -11,86 +21,130 @@ export default function Main() {
       </div>
       <span>Links Úteis:</span>
       <div className="grid-links">
-        <a href="http://www.speedyshare.com/drive/s/GE5dIu8EwESJEkySydikUPmB4JODOo" target="_blank">
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/GE5dIu8EwESJEkySydikUPmB4JODOo"
+          target="_blank"
+        >
           Apresentação
-          <Newspaper color={"#000000"} height="70px" width="70px" />
+          <Easel color={"#00253F"} height="70px" width="70px" />
         </a>
 
         <a
+          className="button-59"
           href="https://siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/1CCECD3F-92A4-F79D-6769-A55A93A1EB26.html"
           target="_blank"
         >
-          Grade curricular BCMT
-          <Reader color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="#" target="_blank">
-          Regulamento falta
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="#" target="_blank">
-          Objetivos falta
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="#" target="_blank">
-          Disciplinas e Exigências falta
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="#" target="_blank">
-          Coordenação falta
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="http://www.speedyshare.com/drive/s/KoTP3XN5clxfDmWmLr4905LmF93aGm" target="_blank">
-          Analista de Sup. à Decisão
-          <Newspaper color={"#000000"} height="70px" width="70px" />
+          Distribuição curricular BCMT
+          <Reader color={"#00253F"} height="70px" width="70px" />
         </a>
 
         <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/Grv0INohKs6Qai8yU5627qYrN5mHYy"
+          target="_blank"
+        >
+          Regulamento
+          <Book color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/vi4XIzRWHGjejVd2GrEpapiiIABNIZ"
+          target="_blank"
+        >
+          Objetivos
+          <TrendingUp color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/5QBLKWh8rMhtksmzBgVYjQyGa4KYjh"
+          target="_blank"
+        >
+          Disciplinas e Exigências
+          <ListCircle color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/1dcRCLwiVj3TQ1ldqIyxhyEpXkXZzM"
+          target="_blank"
+        >
+          Coordenação
+          <Business color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/KoTP3XN5clxfDmWmLr4905LmF93aGm"
+          target="_blank"
+        >
+          Analista de Sup. à Decisão
+          <Library color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
           href="https://siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/91D11513-92A4-F799-1817-75D69383A7B9.html"
           target="_blank"
         >
           Distribuição curricular: Análise
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="http://www.speedyshare.com/drive/s/RKygH17IoLiwJnfPJluLxpfVUwzeeh" target="_blank">
-          Sensoriamento remoto e Geoprocessamento
-          <Newspaper color={"#000000"} height="70px" width="70px" />
+          <Reader color={"#00253F"} height="70px" width="70px" />
         </a>
 
         <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/RKygH17IoLiwJnfPJluLxpfVUwzeeh"
+          target="_blank"
+        >
+          Sensoriamento remoto e Geoprocessamento
+          <Library color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
           href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/8C768E10-92A4-F79B-6A3A-191E92752891.html"
           target="_blank"
         >
           Distribuição curricular: Sensoriamento
-          <Newspaper color={"#000000"} height="70px" width="70px" />
-        </a>
-
-        <a href="http://www.speedyshare.com/drive/s/q0YlyDxYyMTetaJCFEUzgEw6aQluk0" target="_blank">
-          Ciências da Terra e Patrimônio Natural
-          <Newspaper color={"#000000"} height="70px" width="70px" />
+          <Reader color={"#00253F"} height="70px" width="70px" />
         </a>
 
         <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/q0YlyDxYyMTetaJCFEUzgEw6aQluk0"
+          target="_blank"
+        >
+          Ciências da Terra e Patrimônio Natural
+          <Library color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
           href="https://siga.ufrj.br/sira/repositorio-curriculo/F04BDFF5-92A4-F79A-5A68-EF48B3805A33.html"
           target="_blank"
         >
           Distribuição curricular: Patrimônio
-          <Newspaper color={"#000000"} height="70px" width="70px" />
+          <Reader color={"#00253F"} height="70px" width="70px" />
         </a>
 
-        <a href="#" target="_blank">
-          Contatos falta
-          <Newspaper color={"#000000"} height="70px" width="70px" />
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/wWqHD61SnM3ocBRf7gkaIQ1jG49JaD"
+          target="_blank"
+        >
+          Contatos
+          <Mail color={"#00253F"} height="70px" width="70px" />
         </a>
 
-        <a href="https://www.youtube.com/channel/UCuF83xF3xC2mwcW6aGU9KfQ" target="_blank">
+        <a
+          className="button-59"
+          href="https://www.youtube.com/channel/UCuF83xF3xC2mwcW6aGU9KfQ"
+          target="_blank"
+        >
           Nosso Canal
-          <LogoYoutube color={"#000000"} height="70px" width="70px" />
+          <LogoYoutube color={"#00253F"} height="70px" width="70px" />
         </a>
       </div>
     </Container>
@@ -144,21 +198,32 @@ const Container = styled.div`
       width: 200px;
 
       border-radius: 10px;
+      border: 2px solid #00253f;
       box-shadow: 0px 0px 3px #c9cfc7;
 
-      background-color: #dce3e9;
+      background-color: #f0f4f7;
 
-      font-size: 25px;
+      font-size: 20px;
       font-weight: bold;
 
       margin-bottom: 25px;
-      padding: 10ox;
+      padding: 10px;
 
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       text-align: center;
+    }
+
+    & > a:hover {
+      background-color: #cdd1d4;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .button-59 {
+      min-width: 170px;
     }
   }
 
