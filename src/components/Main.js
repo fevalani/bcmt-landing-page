@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Loader from "react-loader-spinner";
 import {
@@ -10,11 +11,28 @@ import {
   ListCircle,
   Business,
   Library,
+  Newspaper,
+  Desktop,
+  Calendar,
 } from "react-ionicons";
 
 export default function Main() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Container>
+    <Container position={scrollPosition}>
       <div className="comming-soon">
         Site Oficial em construção
         <Loader className="three-dots" type="ThreeDots" color="#000" height={40} width={40} />
@@ -37,6 +55,24 @@ export default function Main() {
         >
           Distribuição curricular BCMT
           <Reader color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
+          href="https://portal.ufrj.br/Portal/acesso?cid=87055"
+          target="_blank"
+        >
+          Portal do Aluno UFRJ
+          <Desktop color={"#00253F"} height="70px" width="70px" />
+        </a>
+
+        <a
+          className="button-59"
+          href="http://www.speedyshare.com/drive/s/0vsIZnsKyG6bnFTdRxJdH6E2VnApPZ"
+          target="_blank"
+        >
+          Manual do Calouro 21.1
+          <Newspaper color={"#00253F"} height="70px" width="70px" />
         </a>
 
         <a
@@ -129,6 +165,11 @@ export default function Main() {
           <Reader color={"#00253F"} height="70px" width="70px" />
         </a>
 
+        <a className="button-59" href="https://siac.ufrj.br/" target="_blank">
+          11ª SIAc
+          <Calendar color={"#00253F"} height="70px" width="70px" />
+        </a>
+
         <a
           className="button-59"
           href="http://www.speedyshare.com/drive/s/wWqHD61SnM3ocBRf7gkaIQ1jG49JaD"
@@ -155,6 +196,7 @@ const Container = styled.div`
   height: 100%;
 
   padding: 40px 20px;
+  margin-top: ${({ position }) => (position <= 160 ? "0px" : "200px")};
 
   display: flex;
   justify-content: center;
