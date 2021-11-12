@@ -13,6 +13,7 @@ import {
   Library,
   Newspaper,
   Desktop,
+  Calendar,
 } from "react-ionicons";
 
 export default function Main() {
@@ -166,7 +167,7 @@ export default function Main() {
 
         <a className="button-59" href="https://siac.ufrj.br/" target="_blank">
           11ª SIAc
-          <Mail color={"#00253F"} height="70px" width="70px" />
+          <Calendar color={"#00253F"} height="70px" width="70px" />
         </a>
 
         <a
