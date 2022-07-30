@@ -8,14 +8,14 @@ export default function Footer() {
     <Container>
       <div className="background-image"></div>
       <div className="footer-infos">
-        <a href="https://ufrj.br/" target="_blank">
+        <a href="https://ufrj.br/" target="_blank" rel="noreferrer">
           <img className="logo-ufrj" src={logoUFRJ} alt="logo_universidade_ufrj" />
         </a>
         <div className="address">
           Av. Athos da Silveira Ramos, 498-530 - Cidade Universitária da Universidade Federal do Rio
           de Janeiro - Rio de Janeiro
         </div>
-        <a href="https://www.ccmn.ufrj.br/" target="_blank">
+        <a href="https://www.ccmn.ufrj.br/" target="_blank" rel="noreferrer">
           <img className="logo-ccmn" src={logoCCMN} alt="logo_ccmn" />
         </a>
       </div>

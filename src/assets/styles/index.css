@@ -6,8 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-image: url("https://www.ccmn.ufrj.br/wp-content/themes/appointment-pro/images/bg-pattern/bg_img1.png");
-  background-size: cover;
-  background-position: center;
+  background-size: repeat;
+  background-attachment: fixed;
 }
 
 code {
