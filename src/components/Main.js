@@ -89,7 +89,7 @@ export default function Main({ setSelectedTitle }) {
             );
           } else {
             return (
-              <a className="button-59" href={element.href} target="_blank" rel="noreferrer">
+              <a className="button-59" href={element.href} target="_blank" rel="noreferrer" key={i}>
                 {element.title}
                 {selectIcon(element.icon)}
               </a>
