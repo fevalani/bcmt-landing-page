@@ -17,7 +17,7 @@ import {
 } from "react-ionicons";
 import { useNavigate } from "react-router-dom";
 
-import content from "/home/fernando/Projetos/UFRJ/bcmt-landing-page/src/assets/content/content.js";
+import content from "../assets/content/content.js";
 
 export default function Main({ setSelectedTitle }) {
   const [scrollPosition, setScrollPosition] = useState(0);

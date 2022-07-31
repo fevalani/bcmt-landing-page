@@ -23,7 +23,7 @@ export default function Content({ content, selectedTitle }) {
   return (
     <Container>
       <span>{title}</span>
-      <p onClick={() => console.log(selectedContent(selectedTitle))}>{text}</p>
+      <p onClick={() => console.log(" ")}>{text}</p>
     </Container>
   );
 }
