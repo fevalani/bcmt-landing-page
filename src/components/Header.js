@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import image from "../assets/images/background_header.png";
 
 export default function Header() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const navigate = useNavigate();
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -20,7 +22,9 @@ export default function Header() {
 
   return (
     <Container className="header" position={scrollPosition}>
-      <div className="title">BCMT</div>
+      <div className="title" onClick={() => navigate(-1)}>
+        BCMT
+      </div>
       <div className="sub-title">Bacharelado em Ciências Matemáticas e da Terra</div>
     </Container>
   );
@@ -56,6 +60,7 @@ const Container = styled.div`
 				color: #fff;
 				font-size: 35px;
 				font-weight: bold;
+				cursor: pointer;
 			}
 
 			.sub-title {
@@ -77,12 +82,13 @@ const Container = styled.div`
 			align-items: center;
 
 			box-shadow: 0px 2px 10px -2px #000;
-
 			.title {
 				color: #fff;
 				font-size: 75px;
 				font-weight: bold;
 				line-height: 69px;
+				cursor: pointer;
+
 			}
 
 			.sub-title {

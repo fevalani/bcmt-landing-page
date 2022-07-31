@@ -15,9 +15,13 @@ import {
   Desktop,
   Calendar,
 } from "react-ionicons";
+import { useNavigate } from "react-router-dom";
 
-export default function Main() {
+import content from "../assets/content/content.js";
+
+export default function Main({ setSelectedTitle }) {
   const [scrollPosition, setScrollPosition] = useState(0);
+  let navigate = useNavigate();
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -31,158 +35,73 @@ export default function Main() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  function selectIcon(icon) {
+    if (icon === "Easel") {
+      return <Easel color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "LogoYoutube") {
+      return <LogoYoutube color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Reader") {
+      return <Reader color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Mail") {
+      return <Mail color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Book") {
+      return <Book color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "TrendingUp") {
+      return <TrendingUp color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "ListCircle") {
+      return <ListCircle color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Business") {
+      return <Business color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Library") {
+      return <Library color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Newspaper") {
+      return <Newspaper color={"#00253F"} height="70px" width="70px" />;
+    } else if (icon === "Desktop") {
+      return <Desktop color={"#00253F"} height="70px" width="70px" />;
+    } else {
+      return <Calendar color={"#00253F"} height="70px" width="70px" />;
+    }
+  }
+
   return (
     <Container position={scrollPosition}>
       <div className="comming-soon">
         Site Oficial em construção
         <Loader className="three-dots" type="ThreeDots" color="#000" height={40} width={40} />
       </div>
-      <span>Links Úteis:</span>
+      <span>Por enquanto alguns links úteis:</span>
+
       <div className="grid-links">
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/GE5dIu8EwESJEkySydikUPmB4JODOo"
-          target="_blank"
-        >
-          Apresentação
-          <Easel color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="https://siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/1CCECD3F-92A4-F79D-6769-A55A93A1EB26.html"
-          target="_blank"
-        >
-          Distribuição curricular BCMT
-          <Reader color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="https://portal.ufrj.br/Portal/acesso?cid=87055"
-          target="_blank"
-        >
-          Portal do Aluno UFRJ
-          <Desktop color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/0vsIZnsKyG6bnFTdRxJdH6E2VnApPZ"
-          target="_blank"
-        >
-          Manual do Calouro 21.1
-          <Newspaper color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/Grv0INohKs6Qai8yU5627qYrN5mHYy"
-          target="_blank"
-        >
-          Regulamento
-          <Book color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/vi4XIzRWHGjejVd2GrEpapiiIABNIZ"
-          target="_blank"
-        >
-          Objetivos
-          <TrendingUp color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/5QBLKWh8rMhtksmzBgVYjQyGa4KYjh"
-          target="_blank"
-        >
-          Disciplinas e Exigências
-          <ListCircle color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/1dcRCLwiVj3TQ1ldqIyxhyEpXkXZzM"
-          target="_blank"
-        >
-          Coordenação
-          <Business color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/KoTP3XN5clxfDmWmLr4905LmF93aGm"
-          target="_blank"
-        >
-          Analista de Sup. à Decisão
-          <Library color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="https://siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/91D11513-92A4-F799-1817-75D69383A7B9.html"
-          target="_blank"
-        >
-          Distribuição curricular: Análise
-          <Reader color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/RKygH17IoLiwJnfPJluLxpfVUwzeeh"
-          target="_blank"
-        >
-          Sensoriamento remoto e Geoprocessamento
-          <Library color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/8C768E10-92A4-F79B-6A3A-191E92752891.html"
-          target="_blank"
-        >
-          Distribuição curricular: Sensoriamento
-          <Reader color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/q0YlyDxYyMTetaJCFEUzgEw6aQluk0"
-          target="_blank"
-        >
-          Ciências da Terra e Patrimônio Natural
-          <Library color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="https://siga.ufrj.br/sira/repositorio-curriculo/F04BDFF5-92A4-F79A-5A68-EF48B3805A33.html"
-          target="_blank"
-        >
-          Distribuição curricular: Patrimônio
-          <Reader color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a className="button-59" href="https://siac.ufrj.br/" target="_blank">
-          11ª SIAc
-          <Calendar color={"#00253F"} height="70px" width="70px" />
-        </a>
-
-        <a
-          className="button-59"
-          href="http://www.speedyshare.com/drive/s/wWqHD61SnM3ocBRf7gkaIQ1jG49JaD"
-          target="_blank"
-        >
-          Contatos
-          <Mail color={"#00253F"} height="70px" width="70px" />
-        </a>
+        {content.map((element, i) => {
+          if (element.href === "") {
+            return (
+              <Button
+                onClick={() => {
+                  setSelectedTitle(element.title);
+                  navigate("/content");
+                }}
+                key={i}
+              >
+                {element.title}
+                {selectIcon(element.icon)}
+              </Button>
+            );
+          } else {
+            return (
+              <a className="button-59" href={element.href} target="_blank" rel="noreferrer" key={i}>
+                {element.title}
+                {selectIcon(element.icon)}
+              </a>
+            );
+          }
+        })}
 
         <a
           className="button-59"
           href="https://www.youtube.com/channel/UCuF83xF3xC2mwcW6aGU9KfQ"
           target="_blank"
+          rel="noreferrer"
         >
           Nosso Canal
           <LogoYoutube color={"#00253F"} height="70px" width="70px" />
@@ -292,5 +211,37 @@ const Container = styled.div`
       justify-content: center;
       align-items: center;
     }
+  }
+`;
+
+const Button = styled.button`
+  height: 200px;
+  width: 200px;
+
+  border-radius: 10px;
+  border: 2px solid #00253f;
+  box-shadow: 0px 0px 3px #c9cfc7;
+
+  background-color: #f0f4f7;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: inherit;
+
+  margin-bottom: 25px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  :hover {
+    background-color: #cdd1d4;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 170px;
   }
 `;
