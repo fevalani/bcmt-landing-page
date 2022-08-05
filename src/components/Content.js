@@ -1,8 +1,11 @@
 import styled from "styled-components";
-import { useEffect, useState } from "react";
+import HTMLReactParser from "html-react-parser";
+import { useContext, useEffect, useState } from "react";
+import SelectedTitleContext from "../context/SelectedTitleContext";
 
-export default function Content({ content, selectedTitle }) {
+export default function Content({ content }) {
   const contents = content;
+  const { selectedTitle } = useContext(SelectedTitleContext);
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
 
@@ -23,7 +26,7 @@ export default function Content({ content, selectedTitle }) {
   return (
     <Container>
       <span>{title}</span>
-      <p onClick={() => console.log(" ")}>{text}</p>
+      <span>{HTMLReactParser(text)}</span>
     </Container>
   );
 }
@@ -38,7 +41,7 @@ const Container = styled.div`
 
   padding: 50px 50px;
 
-  span {
+  span:first-child {
     font-size: 35px;
     color: #003366;
 
@@ -46,11 +49,10 @@ const Container = styled.div`
     text-decoration: overline;
   }
 
-  p {
+  span:nth-child(2) {
     font-size: 20px;
     text-align: justify;
     line-height: 2;
-    text-indent: 50px;
     word-wrap: break-word;
     display: inline-block;
   }

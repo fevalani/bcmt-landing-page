@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import Loader from "react-loader-spinner";
 import {
@@ -16,11 +16,14 @@ import {
   Calendar,
 } from "react-ionicons";
 import { useNavigate } from "react-router-dom";
+import SelectedTitleContext from "../context/SelectedTitleContext";
 
 import content from "../assets/content/content.js";
 
-export default function Main({ setSelectedTitle }) {
+export default function Main() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const { setSelectedTitle } = useContext(SelectedTitleContext);
+
   let navigate = useNavigate();
 
   const handleScroll = () => {
@@ -155,8 +158,8 @@ const Container = styled.div`
     justify-content: space-evenly;
 
     & > a {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
 
       border-radius: 10px;
       border: 2px solid #00253f;
@@ -215,8 +218,8 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 
   border-radius: 10px;
   border: 2px solid #00253f;
