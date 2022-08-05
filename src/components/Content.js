@@ -47,6 +47,7 @@ const Container = styled.div`
 
     margin-bottom: 50px;
     text-decoration: overline;
+    line-height: 1.5;
   }
 
   span:nth-child(2) {
