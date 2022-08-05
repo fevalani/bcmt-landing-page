@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import image from "../assets/images/background_header.png";
 
 export default function Header() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -22,7 +23,7 @@ export default function Header() {
 
   return (
     <Container className="header" position={scrollPosition}>
-      <div className="title" onClick={() => navigate(-1)}>
+      <div className="title" onClick={() => (location.pathname !== "/" ? navigate(-1) : "")}>
         BCMT
       </div>
       <div className="sub-title">Bacharelado em Ciências Matemáticas e da Terra</div>
