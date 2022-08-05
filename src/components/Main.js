@@ -159,7 +159,7 @@ const Container = styled.div`
 
     & > a {
       height: 180px;
-      width: 180px;
+      width: 190px;
 
       border-radius: 10px;
       border: 2px solid #00253f;
@@ -219,7 +219,7 @@ const Container = styled.div`
 
 const Button = styled.button`
   height: 180px;
-  width: 180px;
+  width: 190px;
 
   border-radius: 10px;
   border: 2px solid #00253f;
