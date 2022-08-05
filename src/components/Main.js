@@ -158,8 +158,8 @@ const Container = styled.div`
     justify-content: space-evenly;
 
     & > a {
-      height: 150px;
-      width: 150px;
+      height: 180px;
+      width: 180px;
 
       border-radius: 10px;
       border: 2px solid #00253f;
@@ -218,8 +218,8 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
 
   border-radius: 10px;
   border: 2px solid #00253f;

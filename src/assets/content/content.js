@@ -28,7 +28,7 @@ const content = [
     title: "Manual do Calouro",
     icon: "Newspaper",
     href: "",
-    text: "",
+    text: "Em atualização...",
   },
   {
     title: "Regulamento do Curso",
